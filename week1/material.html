@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rangkuman Materi Minggu 1</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h1 {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            font-size: 2em;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        p, ul, ol, table {
+            margin-bottom: 15px;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 4px;
+            word-wrap: normal;
+            overflow-x: auto;
+        }
+        .inline-code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .note {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00acc1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Rangkuman Materi Minggu 1 – Dasar Pemrograman Python</h1>
+    
+    <h2>1. Apa Itu Programming?</h2>
+    <p>Pemrograman adalah proses memberikan <strong>instruksi</strong> yang sangat, sangat, <strong>sangat detail</strong> kepada komputer.</p>
+    <p>Bayangkan Anda ingin membuat kue. Anda tidak hanya mengatakan "buat kue yang enak," kan? Anda akan memberikan resep yang berisi setiap langkah dengan jelas: "ambil 200 gram tepung," "campurkan dengan 100 gram gula," "aduk selama 5 menit," dan seterusnya.</p>
+    <p>Komputer sama seperti itu. Komputer tidak punya "akal sehat" untuk menebak maksud kita. Ia hanya bisa mengikuti instruksi. Jadi, tugas kita sebagai programmer adalah menuliskan "resep" (yang kita sebut <strong>kode</strong>) yang tidak ambigu, langkah demi langkah, agar komputer bisa melaksanakannya dengan sempurna.</p>
+    <p><strong>Ilustrasi: Meminta Komputer Membuat Teh Manis</strong></p>
+    <ol>
+        <li>Ambil gelas.</li>
+        <li>Ambil sendok.</li>
+        <li>Masukkan kantung teh ke dalam gelas.</li>
+        <li>Masukkan satu sendok teh gula ke dalam gelas.</li>
+        <li>Nyalakan kompor.</li>
+        <li>Taruh panci berisi air di atas kompor.</li>
+        <li>Panaskan air sampai mendidih.</li>
+        <li>Ambil air panas dari panci.</li>
+        <li>Tuangkan air panas ke dalam gelas sampai penuh.</li>
+        <li>Aduk teh dan gula menggunakan sendok.</li>
+        <li>Angkat kantung teh dari gelas.</li>
+        <li>Teh manis siap disajikan.</li>
+    </ol>
+    <p>Semua instruksi ini harus diberikan agar komputer bisa menyelesaikan tugasnya tanpa kesalahan.</p>
+    
+    <h2>2. Apa Itu Code Editor? (VS Code)</h2>
+    <p>Code Editor adalah alat yang kita gunakan untuk menulis kode. Anggaplah Code Editor seperti buku catatan digital khusus untuk programmer.</p>
+    <ul>
+        <li><strong>Bukan Buku Biasa:</strong> VS Code bukan buku catatan biasa seperti Notepad. Ia cerdas! Ia tahu aturan-aturan penulisan kode Python.</li>
+        <li><strong>Pewarnaan Kode (Syntax Highlighting):</strong> VS Code akan mewarnai kode Anda. Misalnya, angka bisa berwarna biru, teks berwarna hijau, dan kata kunci penting berwarna ungu. Ini sangat membantu kita membaca dan menemukan kesalahan.</li>
+        <li><strong>Terminal Langsung:</strong> Anda bisa menjalankan program langsung di dalam VS Code. Ini menghemat waktu karena Anda tidak perlu bolak-balik antara VS Code dan aplikasi lain.</li>
+    </ul>
+
+    <h3>Mengenal Komentar (<span class="inline-code">#</span>)</h3>
+    <p>Komentar adalah teks yang kita tulis di dalam kode, tetapi <strong>tidak akan dibaca atau dijalankan oleh komputer</strong>. Komentar sangat penting bagi programmer.</p>
+    <ul>
+        <li><strong>Kegunaan Komentar:</strong>
+            <ul>
+                <li><strong>Mengingatkan Diri Sendiri:</strong> Anda bisa menulis catatan untuk diri sendiri tentang apa tujuan dari sebuah baris kode atau bagian program. Ini akan membantu Anda mengingat kembali saat membuka kode tersebut di lain waktu.</li>
+                <li><strong>Menjelaskan Kode untuk Orang Lain:</strong> Jika Anda bekerja dalam tim, komentar membantu teman-teman Anda memahami logika di balik kode yang Anda tulis.</li>
+                <li><strong>Mematikan Kode Sementara:</strong> Jika Anda ingin mencoba sebuah ide baru dan tidak ingin menghapus kode lama, Anda bisa "mematikan" kode tersebut dengan mengubahnya menjadi komentar.</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>Cara Menulis Komentar:</strong></p>
+    <ul>
+        <li>Di Python, Anda bisa membuat komentar dengan menambahkan tanda pagar (<span class="inline-code">#</span>) di awal baris.</li>
+    </ul>
+    <div class="code-block">
+        <code># Ini adalah komentar, tidak akan dijalankan oleh Python<br/>print("Halo, dunia!")  # Komentar juga bisa diletakkan di akhir baris</code>
+    </div>
+
+    <h2>3. Apa Itu Bahasa Pemrograman & Python?</h2>
+    <p>Bahasa pemrograman adalah bahasa yang kita gunakan untuk "berbicara" dengan komputer.</p>
+    <ul>
+        <li><strong>Kenapa ada banyak bahasa?</strong> Sama seperti manusia punya bahasa Indonesia, Inggris, atau Mandarin, komputer juga punya banyak bahasa. Setiap bahasa punya kelebihan masing-masing.</li>
+        <li><strong>Python:</strong> Bahasa ini sangat terkenal karena sintaksnya yang sederhana. Kode Python sangat mirip dengan bahasa Inggris yang mudah dibaca. Ini membuat Python menjadi pilihan yang sangat baik untuk kita yang baru memulai.</li>
+    </ul>
+
+    <h2>4. Output di Python: Fungsi <span class="inline-code">print()</span></h2>
+    <p>Fungsi <span class="inline-code">print()</span> adalah cara kita meminta komputer untuk "berbicara" atau menampilkan sesuatu di layar. Ini adalah fungsi pertama yang harus kita kuasai.</p>
+    <p><strong>Mencetak Teks:</strong></p>
+    <p>Jika Anda ingin mencetak tulisan, tulisan tersebut harus diapit oleh tanda kutip ganda (<code>" "</code>) atau tunggal (<code>' '</code>).</p>
+    <div class="code-block">
+        <code>print("Halo, dunia!")</code>
+    </div>
+    <p>Output:</p>
+    <div class="code-block">
+        <code>Halo, dunia!</code>
+    </div>
+    <p><strong>Mencetak Angka:</strong></p>
+    <p>Jika Anda ingin mencetak angka atau hasil perhitungan, Anda <strong>tidak perlu</strong> menggunakan tanda kutip.</p>
+    <div class="code-block">
+        <code>print(10 + 5)</code>
+    </div>
+    <p>Output:</p>
+    <div class="code-block">
+        <code>15</code>
+    </div>
+    <p><strong>Mencetak Banyak Hal Sekaligus:</strong></p>
+    <p>Anda juga bisa menggabungkan teks dan angka dalam satu baris <span class="inline-code">print()</span> dengan menggunakan koma. Python akan secara otomatis menambahkan spasi di antara mereka.</p>
+    <div class="code-block">
+        <code>print("Saya berusia", 13, "tahun.")</code>
+    </div>
+    <p>Output:</p>
+    <div class="code-block">
+        <code>Saya berusia 13 tahun.</code>
+    </div>
+
+    <h2>5. Operasi Aritmatika di Python</h2>
+    <p>Python dapat berfungsi layaknya kalkulator canggih. Ia bisa melakukan berbagai perhitungan dasar. Mari kita lihat satu per satu.</p>
+    <ul>
+        <li><strong>Penjumlahan (<span class="inline-code">+</span>)</strong>: Menggunakan simbol <span class="inline-code">+</span></li>
+        <div class="code-block"><code>print(10 + 5)</code></div>
+        <li><strong>Pengurangan (<span class="inline-code">-</span>)</strong>: Menggunakan simbol <span class="inline-code">-</span></li>
+        <div class="code-block"><code>print(15 - 8)</code></div>
+        <li><strong>Perkalian (<span class="inline-code">*</span>)</strong>: Menggunakan simbol <span class="inline-code">*</span></li>
+        <div class="code-block"><code>print(4 * 6)</code></div>
+        <li><strong>Pembagian (<span class="inline-code">/</span>)</strong>: Menggunakan simbol <span class="inline-code">/</span></li>
+        <div class="code-block"><code>print(20 / 4)</code></div>
+        <li><strong>Pangkat (<span class="inline-code">**</span>)</strong>: Menggunakan dua tanda bintang <span class="inline-code">**</span></li>
+        <div class="code-block"><code>print(2 ** 5)</code></div>
+        <p>Ini sama dengan <code>2 x 2 x 2 x 2 x 2</code>.<br/>Output: <code>32</code></p>
+    </ul>
+
+    <h2>6. Variabel di Python</h2>
+    <p>Variabel adalah seperti <strong>kotak penyimpanan</strong> yang bisa kita beri nama. Kita bisa menaruh data (seperti teks atau angka) di dalam kotak ini, lalu mengambilnya lagi kapan saja kita butuhkan.</p>
+    <h3>Konsep Penting tentang Variabel</h3>
+    <ol>
+        <li><strong>Variabel Harus Didefinisikan Dulu:</strong>
+            <p>Komputer membaca kode dari baris paling atas ke paling bawah. Jadi, Anda harus membuat variabel (kotaknya) terlebih dahulu sebelum bisa menggunakannya.</p>
+            <div class="code-block">
+                <code># Kode ini akan error, karena variabel 'nama' belum ada<br/>print(nama)<br/>nama = "Budi"</code>
+            </div>
+            <p><strong>Kode yang benar:</strong></p>
+            <div class="code-block">
+                <code>nama = "Budi"<br/>print(nama)</code>
+            </div>
+        </li>
+        <li><strong>Isi Variabel Bisa Diubah:</strong>
+            <p>Ini adalah kekuatan utama dari variabel. Anda bisa mengubah isinya sesuai kebutuhan.</p>
+            <div class="code-block">
+                <code># Di awal, isi kotak 'skor' adalah 100<br/>skor = 100<br/>print("Skor awal:", skor)<br/><br/># Sekarang, isi kotak 'skor' kita ubah menjadi 150<br/>skor = 150<br/>print("Skor baru:", skor)</code>
+            </div>
+        </li>
+        <li><strong>Aturan Penamaan Variabel:</strong>
+            <ul>
+                <li><strong>Aturan Mutlak:</strong>
+                    <ul>
+                        <li>Nama variabel harus dimulai dengan huruf (<span class="inline-code">a-z</span>, <span class="inline-code">A-Z</span>) atau garis bawah (<span class="inline-code">_</span>).</li>
+                        <li>Nama variabel tidak boleh dimulai dengan angka.</li>
+                    </ul>
+                </li>
+                <li><strong>Praktik Terbaik (Best Practice):</strong>
+                    <ul>
+                        <li>Gunakan huruf kecil.</li>
+                        <li>Jika nama variabel terdiri dari dua kata atau lebih, gunakan garis bawah (<span class="inline-code">_</span>) untuk memisahkan kata-kata tersebut. Ini disebut <span class="inline-code">snake_case</span>. Contoh: <span class="inline-code">panjang_persegi</span>.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>7. String di Python</h2>
+    <p><strong>String</strong> adalah istilah untuk <strong>teks</strong> dalam pemrograman. Setiap kali Anda melihat tulisan yang diapit oleh tanda kutip, itu adalah <code>string</code>.</p>
+    <ul>
+        <li><strong>Mengapa harus ada tanda kutip?</strong>
+            <p>Tanda kutip memberitahu Python bahwa ini adalah <strong>teks biasa</strong>, bukan perintah atau variabel.</p>
+            <p>Misalnya, jika Anda menulis <span class="inline-code">print(nama)</span>, Python tahu <span class="inline-code">nama</span> adalah variabel. Tapi jika Anda menulis <span class="inline-code">print("nama")</span>, Python akan mencetak teks "nama".</p>
+        </li>
+    </ul>
+    <h3>Menggabungkan dan Mengulang String</h3>
+    <ul>
+        <li><strong>Menggabungkan String (<span class="inline-code">+</span>):</strong><br>
+            Anda bisa menggabungkan dua <code>string</code> menggunakan tanda plus (<span class="inline-code">+</span>).
+            <div class="code-block">
+                <code>sapaan = "Selamat pagi,"<br/>nama = "Andi"<br/>print(sapaan + " " + nama)</code>
+            </div>
+            Output:
+            <div class="code-block">
+                <code>Selamat pagi, Andi</code>
+            </div>
+        </li>
+        <li><strong>Mengulang String (<span class="inline-code">*</span>):</strong><br>
+            Anda bisa mengulang <code>string</code> menggunakan tanda kali (<span class="inline-code">*</span>).
+            <div class="code-block">
+                <code>print("Wow" * 3)</code>
+            </div>
+            Output:
+            <div class="code-block">
+                <code>WowWowWow</code>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
