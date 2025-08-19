@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Minggu 1 - Python Dasar</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #1a1a1a;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h1 {
+            border-bottom: 3px solid #ff7b00;
+            padding-bottom: 10px;
+            font-size: 2em;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        p, ul, ol, table {
+            margin-bottom: 15px;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ff7b00;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 4px;
+            word-wrap: normal;
+            overflow-x: auto;
+        }
+        .inline-code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .task-list li {
+            margin-bottom: 10px;
+        }
+        .note {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00acc1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Latihan Pemrograman Python - Minggu 1</h1>
+    <p>Selamat datang di halaman latihan! Setelah mempelajari materi dasar, sekarang saatnya menguji pemahaman kalian. Kerjakan setiap soal dengan teliti dan jangan takut mencoba. Setiap kesalahan adalah bagian dari proses belajar.</p>
+    
+    <h2>Panduan Mengerjakan</h2>
+    <ol>
+        <li>Buka VS Code dan buat satu file Python baru. Beri nama file tersebut <code>latihan_minggu_1.py</code>.</li>
+        <li>Tulis semua kode jawaban Anda di dalam satu file tersebut. Untuk memisahkan jawaban setiap bagian, Anda bisa menggunakan komentar.</li>
+        <li>Untuk setiap soal yang meminta Anda memberikan penjelasan (bukan kode), Anda bisa menuliskannya di file terpisah, seperti dokumen Word atau Google Docs. Beri nama file tersebut <code>jawaban_minggu_1.docx</code> atau sejenisnya.</li>
+        <li>Jalankan kode Anda dan periksa hasilnya di terminal.</li>
+    </ol>
+    <div class="note">
+        <p><strong>Tips:</strong> Gunakan komentar (`#`) di kode Python Anda untuk memisahkan setiap soal. Ini akan membuat kode Anda lebih rapi dan mudah dibaca.</p>
+        <p>Contohnya:</p>
+        <p><code># --- Jawaban Bagian 1, Soal 1 ---<br/>print("Saya siap jadi programmer!")<br/><br/># --- Jawaban Bagian 1, Soal 2 ---<br/>print(500)</code></p>
+    </div>
+
+    <h2>Bagian 1: Mencetak Output dengan `print()`</h2>
+    <p>Gunakan fungsi <span class="inline-code">print()</span> untuk mengerjakan tugas-tugas berikut:</p>
+    <ul class="task-list">
+        <li>Cetak tulisan <span class="inline-code">"Saya siap jadi programmer!"</span>.</li>
+        <li>Cetak angka <strong>500</strong>.</li>
+        <li>Cetak hasil dari perhitungan <strong>(25 + 75)</strong>.</li>
+        <li>Cetak tulisan <span class="inline-code">"Selamat datang di kelas Python"</span>.</li>
+        <li>Cetak angka <strong>-100</strong>.</li>
+        <li>Cetak hasil dari perhitungan <strong>(100 - 45 + 12)</strong>.</li>
+        <li>Cetak tulisan <span class="inline-code">"Hello"</span>, lalu di baris berikutnya cetak tulisan <span class="inline-code">"World"</span>.</li>
+        <li>Cetak tulisan <span class="inline-code">"Hasilnya adalah"</span> diikuti dengan angka <strong>78</strong> dalam satu baris.</li>
+        <li>Cetak tulisan <span class="inline-code">"Tahun ini saya berusia"</span> lalu diikuti dengan usia Anda (angka) dalam satu baris, dipisahkan oleh koma.</li>
+        <li>Cetak nama dan hobi Anda dalam satu baris, dengan memisahkannya menggunakan koma.</li>
+        <li><strong>Soal Tantangan (Debugging):</strong> Ada kesalahan dalam kode di bawah ini. Perbaiki agar dapat berjalan tanpa error dan menghasilkan output yang benar!
+            <div class="code-block">
+                <code>print("Python itu seru!"<br/>print("30" + "5")</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Bagian 2: Operasi Aritmatika</h2>
+    <p>Gunakan fungsi <span class="inline-code">print()</span> dan operator aritmatika untuk mendapatkan hasil berikut. Coba tebak dulu jawabannya sebelum menjalankan kode!</p>
+    <ul class="task-list">
+        <li>Berapa hasil dari <span class="inline-code">10 + 20</span>?</li>
+        <li>Berapa hasil dari <span class="inline-code">50 - 15</span>?</li>
+        <li>Berapa hasil dari <span class="inline-code">5 * 7</span>?</li>
+        <li>Berapa hasil dari <span class="inline-code">100 / 25</span>?</li>
+        <li>Berapa hasil dari <span class="inline-code">2 ** 4</span>?</li>
+        <li>Tentukan hasil dari <span class="inline-code">10 + 20 * 3</span>. Ingat aturan urutan operasi matematika!</li>
+        <li>Tentukan hasil dari <span class="inline-code">(10 + 20) * 3</span>.</li>
+        <li>Tentukan hasil dari <span class="inline-code">100 / 20 + 5</span>.</li>
+        <li>Berapa hasil dari <span class="inline-code">3 * (2 + 4) - 5</span>?</li>
+        <li>Tentukan hasil dari <span class="inline-code">(10 + 5) ** 2</span>.</li>
+        <li><strong>Soal Tantangan:</strong> Ada dua operator yang belum kita pelajari di tabel, yaitu `//` (pembagian bulat) dan `%` (sisa bagi). Coba tebak hasil dari kode ini:
+            <div class="code-block">
+                <code>print(10 // 3)<br/>print(10 % 3)</code>
+            </div>
+            Tuliskan tebakan Anda di dokumen jawaban.
+        </li>
+    </ul>
+
+    <h2>Bagian 3: Menggunakan Variabel</h2>
+    <p>Buatlah variabel untuk menyimpan data, lalu gunakan variabel tersebut untuk mencetak output.</p>
+    <ul class="task-list">
+        <li>Buat variabel bernama <span class="inline-code">nama_siswa</span> dan isi dengan nama Anda. Lalu, cetak isi variabel tersebut.</li>
+        <li>Buat variabel <span class="inline-code">umur_anda</span> dan isi dengan usia Anda. Lalu, cetak kalimat <span class="inline-code">"Umur saya adalah (nilai variabel)"</span>.</li>
+        <li>Buat variabel <span class="inline-code">harga_buku</span> dan isi dengan nilai <span class="inline-code">50000</span>. Cetak kalimat yang berisi harga buku tersebut.</li>
+        <li>Buat variabel <span class="inline-code">harga</span> dan isi dengan nilai <span class="inline-code">5000</span>. Buat variabel <span class="inline-code">jumlah</span> dan isi dengan nilai <span class="inline-code">3</span>. Lalu, cetak total harga (<span class="inline-code">harga</span> dikali <span class="inline-code">jumlah</span>).</li>
+        <li>Buat variabel <span class="inline-code">panjang</span> dan <span class="inline-code">lebar</span>. Isi dengan angka bebas. Hitung dan cetak hasil luas persegi panjang.</li>
+        <li>Buat variabel <span class="inline-code">skor</span> dengan nilai awal <span class="inline-code">0</span>. Kemudian, tambahkan nilai <span class="inline-code">10</span> ke variabel <span class="inline-code">skor</span>. Terakhir, cetak nilai <span class="inline-code">skor</span> yang baru.</li>
+        <li>Buat variabel <span class="inline-code">nilai_pertama</span> dengan nilai <span class="inline-code">10</span> dan <span class="inline-code">nilai_kedua</span> dengan nilai <span class="inline-code">20</span>. Tukar isi kedua variabel tersebut, sehingga <span class="inline-code">nilai_pertama</span> menjadi <span class="inline-code">20</span> dan sebaliknya. Lalu, cetak hasilnya.</li>
+        <li>Buat variabel <span class="inline-code">pesan</span> dengan isi <span class="inline-code">"Selamat datang"</span>. Cetak variabel `pesan`. Di baris berikutnya, ubah isi variabel <span class="inline-code">pesan</span> menjadi <span class="inline-code">"Terima kasih"</span> dan cetak lagi.</li>
+        <li><strong>Soal Tantangan (Debugging):</strong> Perhatikan kode di bawah ini. Tebak apa yang akan terjadi dan perbaiki agar berjalan dengan benar. Tuliskan tebakan dan perbaikan Anda di dokumen jawaban.
+            <div class="code-block">
+                <code>nama_depan = "Budi"<br/>print(Nama_Depan)</code>
+            </div>
+        </li>
+        <li><strong>Soal Tantangan (Debugging):</strong> Tebak apa yang salah pada kode di bawah ini dan perbaiki. Tuliskan tebakan dan perbaikan Anda di dokumen jawaban.
+            <div class="code-block">
+                <code>1_nama = "Andi"<br/>print(1_nama)</code>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Bagian 4: Latihan String</h2>
+    <p>Kerjakan soal berikut untuk menguji pemahaman Anda tentang string.</p>
+    <ul class="task-list">
+        <li>Gabungkan kata <span class="inline-code">"Hello"</span> dan <span class="inline-code">"World"</span> menjadi satu kalimat utuh dengan spasi di tengahnya.</li>
+        <li>Gabungkan dua variabel <span class="inline-code">nama_depan = "Alex"</span> dan <span class="inline-code">nama_belakang = "Santoso"</span> menjadi nama lengkap. Cetak hasilnya.</li>
+        <li>Cetak tulisan <span class="inline-code">"Go Go Go"</span> dengan hanya menggunakan <span class="inline-code">print()</span> satu kali dan operator pengulangan.</li>
+        <li>Buat variabel <span class="inline-code">kata</span> dengan nilai <span class="inline-code">"python"</span>. Cetak variabel <span class="inline-code">kata</span> sebanyak 5 kali.</li>
+        <li>Gabungkan variabel <span class="inline-code">angka_teks = "10"</span> dan <span class="inline-code">angka_teks2 = "20"</span>. Cetak hasilnya. Apakah hasilnya `30` atau `1020`? Mengapa? Tuliskan penjelasan Anda di dokumen jawaban.</li>
+        <li><strong>Soal Tantangan:</strong> Perbaiki kode ini agar tidak error dan menghasilkan output yang benar:
+            <div class="code-block">
+                <code>kata = "Aku suka 'Python'"<br/>print(kata)</code>
+            </div>
+            Jelaskan mengapa perbaikan Anda berhasil di dokumen jawaban.
+        </li>
+        <li><strong>Soal Tantangan:</strong> Mengapa kode di bawah ini akan menghasilkan error?
+            <div class="code-block">
+                <code>pesan = "Halo" + 10<br/>print(pesan)</code>
+            </div>
+            Jelaskan dan berikan contoh cara memperbaikinya di dokumen jawaban.
+        </li>
+    </ul>
+    
+    <h2>Selamat Mengerjakan!</h2>
+    <div class="note">
+        <p>Jika Anda berhasil menyelesaikan semua soal, itu berarti Anda sudah memiliki pemahaman dasar yang sangat kuat. Teruslah berlatih, karena kunci untuk menjadi programmer handal adalah konsistensi.</p>
+    </div>
+</div>
+
+</body>
+</html>
