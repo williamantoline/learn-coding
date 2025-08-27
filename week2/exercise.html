@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Minggu 2 - Python Dasar</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f4f4; color: #222; }
+        .container { background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 800px; margin: 32px auto; }
+        h1 { color: #28a745; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+        h2 { color: #1a1a1a; margin-top: 32px; }
+        h3 { color: #1a1a1a; margin-top: 24px; }
+        .code-block { background: #f8f9fa; border-left: 4px solid #28a745; padding: 16px; margin: 16px 0; font-family: 'Courier New', Courier, monospace; border-radius: 4px; }
+        .note { background: #e0f7fa; border-left: 5px solid #00acc1; padding: 15px; margin: 20px 0; border-radius: 5px; }
+        ul { margin-left: 24px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Latihan Minggu 2: Python Dasar untuk Pemula</h1>
+    <p>Kerjakan latihan berikut secara berurutan. Setiap latihan dirancang agar Anda memahami konsep dari yang paling dasar hingga yang lebih kompleks.</p>
+
+    <h2>1. Komentar di Python</h2>
+    <ul>
+        <li>Buat program yang mencetak <span class="code-block">Hello, dunia!</span> dan tambahkan komentar di atas baris tersebut yang menjelaskan apa yang dilakukan kode.</li>
+        <li>Tambahkan komentar di akhir baris kode yang menjelaskan fungsi <span class="inline-code">print()</span>.</li>
+        <li>Buat komentar multi-baris yang berisi nama Anda, kelas, dan tujuan belajar Python.</li>
+        <li>Nonaktifkan satu baris kode dengan komentar, lalu jelaskan kenapa kode tersebut tidak dijalankan.</li>
+    </ul>
+
+    <h2>2. Penamaan Variabel</h2>
+    <ul>
+        <li>Buat 3 variabel: <span class="inline-code">nama</span>, <span class="inline-code">umur</span>, <span class="inline-code">tinggi_badan</span> dan isi dengan data Anda.</li>
+        <li>Cetak semua variabel tersebut menggunakan <span class="inline-code">print()</span>.</li>
+        <li>Buat variabel dengan nama yang salah (misal diawali angka, ada spasi, atau karakter khusus), lalu perbaiki agar benar.</li>
+        <li>Buat dua variabel dengan nama mirip tapi beda huruf besar/kecil, lalu cetak keduanya dan jelaskan hasilnya.</li>
+        <li>Buat variabel dengan nama yang jelas untuk menyimpan status apakah Anda sudah makan (<span class="inline-code">sudah_makan</span>).</li>
+    </ul>
+
+    <h2>3. Menggunakan Variabel dalam <span class="inline-code">print()</span> dan Penggabungan String</h2>
+    <ul>
+        <li>Cetak kalimat: <span class="inline-code">Nama saya [nama], umur saya [umur]</span> dengan menggabungkan variabel dan string menggunakan <span class="inline-code">+</span>.</li>
+        <li>Cetak kalimat yang sama menggunakan koma di <span class="inline-code">print()</span>.</li>
+        <li>Cetak kalimat: <span class="inline-code">Tinggi badan saya adalah [tinggi_badan] cm</span> menggunakan f-string.</li>
+        <li>Coba gabungkan string dengan angka tanpa mengubah tipe data, lalu perbaiki error yang muncul.</li>
+    </ul>
+
+    <h2>4. Tipe Data Dasar</h2>
+    <ul>
+        <li>Buat variabel bertipe integer, float, string, dan boolean. Cetak semua variabel beserta tipe datanya dengan <span class="inline-code">type()</span>.</li>
+        <li>Ubah variabel integer menjadi string, lalu cetak hasilnya.</li>
+        <li>Buat variabel string berisi angka, lalu ubah menjadi integer dan cetak hasilnya.</li>
+        <li>Buat variabel boolean yang bernilai <span class="inline-code">True</span> jika umur &gt;= 18, dan <span class="inline-code">False</span> jika kurang.</li>
+        <li>Jelaskan perbedaan antara integer dan float dengan contoh.</li>
+    </ul>
+
+    <h2>5. Operasi Boolean Dasar</h2>
+    <ul>
+        <li>Cetak hasil dari <span class="inline-code">True and False</span>, <span class="inline-code">True or False</span>, dan <span class="inline-code">not True</span>.</li>
+        <li>Buat dua variabel boolean, lalu cetak hasil <span class="inline-code">and</span>, <span class="inline-code">or</span>, dan <span class="inline-code">not</span> antara keduanya.</li>
+        <li>Buat program yang menentukan apakah seseorang boleh keluar rumah jika <span class="inline-code">cuaca == "cerah"</span> dan <span class="inline-code">hari_ini == "minggu"</span>. Cetak hasilnya.</li>
+        <li>Buat program yang menentukan status dewasa: <span class="inline-code">True</span> jika umur &gt;= 18, <span class="inline-code">False</span> jika kurang.</li>
+        <li>Buat program yang menentukan apakah dua angka lebih dari 10 (<span class="inline-code">and</span>), atau salah satu lebih dari 10 (<span class="inline-code">or</span>).</li>
+    </ul>
+
+    <h2>Latihan Tantangan</h2>
+    <ul>
+        <li>Buat program yang menampilkan biodata lengkap: nama, umur, tinggi badan, dan status dewasa.</li>
+        <li>Buat program yang menentukan kategori umur: "Dewasa" jika umur &gt;= 18, "Remaja" jika umur &gt;= 13 dan &lt; 18, dan "Anak-anak" jika kurang dari 13.</li>
+        <li>Buat program yang menentukan apakah boleh keluar rumah berdasarkan cuaca dan hari menggunakan operasi boolean.</li>
+        <li>Buat program yang menampilkan hasil operasi matematika (penjumlahan, pengurangan, perkalian, pembagian) dan hasil perbandingan boolean (lebih besar, lebih kecil, sama dengan) dari dua angka yang sudah ditentukan di kode.</li>
+        <li>Buat program yang menentukan pesan sesuai kombinasi status hujan dan status sudah makan (gunakan <span class="inline-code">and</span>, <span class="inline-code">or</span>, <span class="inline-code">not</span>).</li>
+    </ul>
+
+    <div class="note">
+        <strong>Tips:</strong> Selalu gunakan komentar untuk menjelaskan kode Anda. Coba semua latihan, dan diskusikan jika ada yang belum paham!
+    </div>
