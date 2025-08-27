@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Minggu 2 - Python Dasar</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f4f4; color: #222; }
+        .container { background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 800px; margin: 32px auto; }
+        h1 { color: #28a745; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+        h2 { color: #1a1a1a; margin-top: 32px; }
+        h3 { color: #1a1a1a; margin-top: 24px; }
+        .code-block { background: #f8f9fa; border-left: 4px solid #28a745; padding: 16px; margin: 16px 0; font-family: 'Courier New', Courier, monospace; border-radius: 4px; }
+        .inline-code { background: #e8e8e8; padding: 2px 6px; border-radius: 3px; font-family: 'Courier New', Courier, monospace; }
+        ul { margin-left: 24px; }
+        .note { background: #e0f7fa; border-left: 5px solid #00acc1; padding: 15px; margin: 20px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Materi Minggu 2: Python Dasar untuk Pemula</h1>
+
+    <h2>1. Komentar di Python</h2>
+    <p>
+        Komentar adalah bagian dari kode yang tidak dijalankan oleh komputer. Komentar digunakan untuk menjelaskan maksud kode, memberi catatan, atau menonaktifkan kode sementara. Komentar sangat penting agar kode mudah dipahami oleh diri sendiri maupun orang lain.
+    </p>
+    <h3>Komentar Satu Baris</h3>
+    <p>
+        Untuk membuat komentar satu baris, gunakan tanda <span class="inline-code">#</span> di awal baris. Semua teks setelah <span class="inline-code">#</span> akan diabaikan oleh Python.
+    </p>
+    <div class="code-block">
+# Ini adalah komentar satu baris<br>
+print("Hello")  # Ini juga komentar di akhir baris
+    </div>
+    <h3>Komentar Multi-Baris</h3>
+    <p>
+        Untuk komentar lebih dari satu baris, bisa menggunakan beberapa <span class="inline-code">#</span> di setiap baris, atau menggunakan triple quotes <span class="inline-code">""" ... """</span>.
+    </p>
+    <div class="code-block">
+# Ini komentar baris pertama<br>
+# Ini komentar baris kedua<br>
+# Ini komentar baris ketiga
+    </div>
+    <div class="code-block">
+"""<br>
+Ini komentar multi-baris.<br>
+Biasanya digunakan untuk dokumentasi atau penjelasan panjang.<br>
+"""
+    </div>
+    <div class="note">
+        <strong>Tips:</strong> Selalu beri komentar pada bagian kode yang penting atau rumit agar mudah dipahami!
+    </div>
+
+    <h2>2. Penamaan Variabel</h2>
+    <p>
+        Variabel adalah "wadah" untuk menyimpan data. Nama variabel harus mengikuti aturan agar tidak error dan mudah dibaca.
+    </p>
+    <ul>
+        <li>Nama variabel harus diawali huruf atau garis bawah (<span class="inline-code">_</span>).</li>
+        <li>Tidak boleh ada spasi. Gunakan <span class="inline-code">_</span> sebagai pemisah kata.</li>
+        <li>Nama variabel tidak boleh menggunakan karakter khusus seperti <span class="inline-code">!</span>, <span class="inline-code">@</span>, <span class="inline-code">#</span>, dll.</li>
+        <li>Nama variabel sebaiknya jelas dan mudah dimengerti.</li>
+        <li>Python membedakan huruf besar dan kecil (<span class="inline-code">nama</span> dan <span class="inline-code">Nama</span> adalah variabel berbeda).</li>
+    </ul>
+    <div class="code-block">
+nama_lengkap = "Andi"<br>
+tinggi_badan = 170<br>
+usia = 25
+    </div>
+    <h3>Contoh Nama Variabel yang Salah</h3>
+    <div class="code-block">
+2nama = "Budi"      # Salah, tidak boleh diawali angka<br>
+tinggi badan = 170  # Salah, tidak boleh ada spasi<br>
+nama-lengkap = "Cici" # Salah, tidak boleh ada tanda -
+    </div>
+    <div class="note">
+        <strong>Tips:</strong> Gunakan nama variabel yang singkat tapi jelas, misal <span class="inline-code">umur</span>, <span class="inline-code">nilai_ujian</span>, <span class="inline-code">is_active</span>.
+    </div>
+
+    <h2>3. Menggunakan Variabel dalam <span class="inline-code">print()</span> dan Penggabungan String</h2>
+    <p>
+        Fungsi <span class="inline-code">print()</span> digunakan untuk menampilkan data ke layar. Kita bisa menggabungkan variabel dengan string menggunakan tanda <span class="inline-code">+</span> (harus sama tipe datanya) atau menggunakan koma <span class="inline-code">,</span> di dalam <span class="inline-code">print()</span>.
+    </p>
+    <h3>Menggabungkan dengan <span class="inline-code">+</span></h3>
+    <div class="code-block">
+nama = "Andi"<br>
+usia = 25<br>
+print("Nama saya " + nama + ", usia saya " + str(usia))
+    </div>
+    <p>
+        <strong>Catatan:</strong> Jika ingin menggabungkan string dengan angka, angka harus diubah dulu ke string dengan <span class="inline-code">str()</span>.
+    </p>
+    <h3>Menggabungkan dengan Koma</h3>
+    <div class="code-block">
+print("Nama saya", nama, "usia saya", usia)
+    </div>
+    <p>
+        Dengan koma, Python otomatis memisahkan dengan spasi dan tidak perlu mengubah tipe data.
+    </p>
+    <h3>Contoh Lain</h3>
+    <div class="code-block">
+tinggi = 170<br>
+print("Tinggi badan saya adalah", tinggi, "cm")
+    </div>
+    <div class="note">
+        <strong>Tips:</strong> Jika ingin format yang lebih rapi, bisa gunakan <span class="inline-code">f-string</span>:<br>
+        <span class="inline-code">print(f"Nama saya {nama}, usia saya {usia}")</span>
+    </div>
+
+    <h2>4. Tipe Data Dasar</h2>
+    <p>
+        Tipe data adalah jenis data yang bisa disimpan di variabel. Python punya beberapa tipe data dasar:
+    </p>
+    <ul>
+        <li><strong>Integer:</strong> Bilangan bulat, misal <span class="inline-code">5</span>, <span class="inline-code">-20</span>, <span class="inline-code">1000</span></li>
+        <li><strong>Float:</strong> Bilangan desimal, misal <span class="inline-code">2.7</span>, <span class="inline-code">-20.01</span>, <span class="inline-code">3.14</span></li>
+        <li><strong>String:</strong> Teks, misal <span class="inline-code">"hello"</span>, <span class="inline-code">"123"</span>, <span class="inline-code">"Python itu mudah"</span></li>
+        <li><strong>Boolean:</strong> Nilai logika, hanya <span class="inline-code">True</span> atau <span class="inline-code">False</span></li>
+    </ul>
+    <h3>Contoh Penggunaan Tipe Data</h3>
+    <div class="code-block">
+a = 5          # integer<br>
+b = 2.7        # float<br>
+c = "hello"    # string<br>
+d = True       # boolean
+    </div>
+    <h3>Tips Mengenali Tipe Data</h3>
+    <ul>
+        <li>Angka bulat tanpa titik adalah <strong>integer</strong>.</li>
+        <li>Angka dengan titik adalah <strong>float</strong>.</li>
+        <li>Teks diapit tanda kutip (<span class="inline-code">""</span> atau <span class="inline-code">''</span>) adalah <strong>string</strong>.</li>
+        <li><span class="inline-code">True</span> dan <span class="inline-code">False</span> adalah <strong>boolean</strong>.</li>
+    </ul>
+    <div class="note">
+        <strong>Tips:</strong> Gunakan fungsi <span class="inline-code">type()</span> untuk mengecek tipe data:<br>
+        <span class="inline-code">print(type(a))</span>
+    </div>
+
+    <h2>5. Operasi Boolean Dasar</h2>
+    <p>
+        Boolean adalah tipe data yang hanya punya dua nilai: <span class="inline-code">True</span> (benar) dan <span class="inline-code">False</span> (salah). Boolean sering digunakan untuk membuat keputusan dalam program.
+    </p>
+    <h3>Operator Boolean</h3>
+    <ul>
+        <li><strong>AND (<span class="inline-code">and</span>):</strong> Hasilnya <span class="inline-code">True</span> hanya jika <strong>kedua</strong> nilai <span class="inline-code">True</span>.</li>
+        <li><strong>OR (<span class="inline-code">or</span>):</strong> Hasilnya <span class="inline-code">True</span> jika <strong>salah satu</strong> nilai <span class="inline-code">True</span>.</li>
+        <li><strong>NOT (<span class="inline-code">not</span>):</strong> Membalik nilai boolean. <span class="inline-code">not True</span> jadi <span class="inline-code">False</span>, <span class="inline-code">not False</span> jadi <span class="inline-code">True</span>.</li>
+    </ul>
+    <h3>Contoh Operasi Boolean</h3>
+    <div class="code-block">
+print(True and True)    # True<br>
+print(True and False)   # False<br>
+print(False and True)   # False<br>
+print(False and False)  # False
+    </div>
+    <div class="code-block">
+print(True or True)     # True<br>
+print(True or False)    # True<br>
+print(False or True)    # True<br>
+print(False or False)   # False
+    </div>
+    <div class="code-block">
+print(not True)         # False<br>
+print(not False)        # True
+    </div>
+    <h3>Contoh Penggunaan dalam Program</h3>
+    <div class="code-block">
+umur = 19<br>
+print(umur >= 18)   # True, karena 18 lebih besar dari 17<br>
+print(umur < 18)    # False
+    </div>
+    <div class="code-block">
+cuaca = "cerah"<br>
+hari_ini = "minggu"<br>
+print(cuaca == "cerah" and hari_ini == "minggu")  # True
+    </div>
+    <div class="note">
+        <strong>Tips:</strong> Boolean sangat penting untuk membuat keputusan, misal dalam <span class="inline-code">if</span> dan <span class="inline-code">else</span>.
+    </div>
+
+    <h2>Ringkasan & Tips Belajar</h2>
+    <ul>
+        <li>Selalu beri komentar pada kode agar mudah dipahami.</li>
+        <li>Gunakan nama variabel yang jelas dan konsisten.</li>
+        <li>Pahami tipe data agar tidak terjadi error saat menggabungkan atau memproses data.</li>
+        <li>Latihan membuat program sederhana, misal menampilkan biodata, menghitung umur, atau membuat keputusan sederhana.</li>
+        <li>Jangan takut mencoba dan membuat kesalahan. Belajar coding memang butuh latihan dan eksperimen!</li>
+    </ul>
+    <div class="note">
+        <strong>Latihan:</strong> Cobalah membuat program yang menampilkan nama, umur, dan status dewasa (True jika umur &gt;= 18, False jika kurang).
