@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan Minggu 3 - Input dan Percabangan</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    body { background: #fafafa; font-family: Arial, sans-serif; }
+    .container { max-width: 800px; margin: auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
+    h1 { color: #2c3e50; }
+    h2 { color: #34495e; margin-top: 2em; }
+    pre, code { background: #f8f8f8; padding: 0.5em; border-radius: 4px; font-size: 1em; }
+    .example { background: #e7f3fe; border-left: 4px solid #2196F3; padding: 0.5em 1em; margin: 1em 0; }
+    ul { margin-left: 1.5em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Latihan Minggu 3: Input dan Percabangan</h1>
+    <hr>
+
+    <h2>1. Mengecek Lulus KKM</h2>
+    <p>
+      Buatlah program yang bisa memberikan info apakah nilai yang diberikan lulus KKM atau tidak.<br>
+      Batas nilai adalah 0-100.<br>
+      Batas nilai lulus adalah harus lebih besar atau sama dengan 80.
+    </p>
+    <ul>
+      <li>Ketika dijalankan, dia akan meminta inputan nilai.</li>
+      <li>Begitu nilai diinput, program harus meng-output sebuah kata penanda lulus atau tidak.</li>
+      <li>Kata penanda lulus hanya ada dua: <b>"Lulus"</b> atau <b>"Tidak Lulus"</b>, harus persis, tidak boleh kata yang lain. Huruf besar dan kecil juga harus sama.</li>
+      <li>Output "Lulus" jika nilai tersebut lulus KKM, atau output "Tidak Lulus" jika nilai tersebut tidak lulus KKM.</li>
+      <li>Anggap bahwa semua nilai yang dimasukkan pasti ada di rentang 0 sampai 100 (tidak perlu dicek lagi).</li>
+    </ul>
+    <div class="example">
+      <b>Contoh #1:</b><br>
+      Input (Terminal)
+      <pre><code>90</code></pre>
+      Output (Terminal)
+      <pre><code>Lulus</code></pre>
+      <b>Contoh #2:</b><br>
+      Input (Terminal)
+      <pre><code>74</code></pre>
+      Output (Terminal)
+      <pre><code>Tidak Lulus</code></pre>
+    </div>
+
+    <h2>2. Konversi Nilai Angka ke Nilai Huruf</h2>
+    <p>
+      Buatlah program yang bisa memberikan nilai huruf dari nilai angka yang diberikan.<br>
+      Batas nilai adalah 0-100.<br>
+      Berikut adalah aturan mengkonversi nilai:
+    </p>
+    <ul>
+      <li>&ge; 90 = A</li>
+      <li>80-89 = B</li>
+      <li>70-79 = C</li>
+      <li>60-69 = D</li>
+      <li>50-59 = E</li>
+      <li>&lt; 50 = F</li>
+    </ul>
+    <p>
+      Jika nilai lebih dari 100 atau kurang dari 0, keluarkan <b>"Nilai Tidak Valid!"</b> (persis).
+    </p>
+    <ul>
+      <li>Ketika dijalankan, dia akan meminta inputan nilai.</li>
+      <li>Begitu nilai diinput, program harus meng-output sebuah huruf atau sebuah kata.</li>
+      <li>Gunakan aturan di atas untuk menentukan output.</li>
+      <li>Anggap bahwa semua nilai yang dimasukkan pasti angka (tidak mungkin string).</li>
+    </ul>
+    <div class="example">
+      <b>Contoh #1:</b><br>
+      Input (Terminal)
+      <pre><code>93</code></pre>
+      Output (Terminal)
+      <pre><code>A</code></pre>
+      <b>Contoh #2:</b><br>
+      Input (Terminal)
+      <pre><code>63</code></pre>
+      Output (Terminal)
+      <pre><code>D</code></pre>
+      <b>Contoh #3:</b><br>
+      Input (Terminal)
+      <pre><code>102</code></pre>
+      Output (Terminal)
+      <pre><code>Nilai Tidak Valid!</code></pre>
+      <b>Contoh #4:</b><br>
+      Input (Terminal)
+      <pre><code>-17</code></pre>
+      Output (Terminal)
+      <pre><code>Nilai Tidak Valid!</code></pre>
+    </div>
+
+    <h2>3. Mengecek Nama "Budi"</h2>
+    <p>
+      Buatlah program yang bisa mengecek apakah nama yang diinput adalah <b>"Budi"</b> atau bukan.
+    </p>
+    <ul>
+      <li>Ketika dijalankan, program akan meminta input nama.</li>
+      <li>Setelah nama diinput, program harus meng-output sebuah kata penanda.</li>
+      <li>Jika nama yang diinput adalah <b>"Budi"</b> (persis, huruf besar dan kecil harus sama), outputkan <b>"Nama ditemukan"</b>.</li>
+      <li>Jika nama yang diinput bukan "Budi", outputkan <b>"Nama tidak ditemukan"</b>.</li>
+      <li>Output harus persis seperti di atas, tidak boleh ada tambahan kata atau huruf.</li>
+    </ul>
+    <div class="example">
+      <b>Contoh #1:</b><br>
+      Input (Terminal)
+      <pre><code>Budi</code></pre>
+      Output (Terminal)
+      <pre><code>Nama ditemukan</code></pre>
+      <b>Contoh #2:</b><br>
+      Input (Terminal)
+      <pre><code>budi</code></pre>
+      Output (Terminal)
+      <pre><code>Nama tidak ditemukan</code></pre>
+      <b>Contoh #3:</b><br>
+      Input (Terminal)
+      <pre><code>Andi</code></pre>
+      Output (Terminal)
+      <pre><code>Nama tidak ditemukan</code></pre>
+    </div>
+  </div>
+</body>
