@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Minggu 3 - Input dan Percabangan</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            max-width: 800px;
+            margin: 32px auto;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            font-size: 2em;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 32px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #1a1a1a;
+            margin-top: 24px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 4px;
+            word-break: break-all;
+            overflow-x: auto;
+            font-size: 1em;
+            white-space: pre;
+        }
+        .inline-code {
+            background-color: #e8e8e8;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .note {
+            background-color: #e0f7fa;
+            border-left: 5px solid #00acc1;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .latihan {
+            background: #f9fbe7;
+            border-left: 4px solid #cddc39;
+            padding: 0.5em 1em;
+            margin: 2em 0;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            margin: 1em 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px #eee;
+        }
+        ul {
+            margin-left: 24px;
+        }
+        ol {
+            margin-left: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minggu 3: Input dan Percabangan</h1>
+        <hr>
+
+        <h2>Input</h2>
+        <p>Untuk mengambil input dari user (melalui terminal), gunakan perintah <span class="inline-code">input()</span>.</p>
+        <div class="code-block">input()</div>
+        <p>
+            Ketika kode di atas dijalankan, terminal akan 'hanging' untuk menunggu ada inputan. Jika user mengetikkan sesuatu (misal <b>Halo</b>), lalu 'Enter', string <b>Halo</b> akan diterima oleh program, lalu program akan berhenti.
+        </p>
+        <p>
+            <span class="inline-code">input()</span> bisa diisi dengan string, yang akan muncul ketika terminal meminta inputan. Misal:
+        </p>
+        <div class="code-block">input("Masukkan nama: ")</div>
+        <p>
+            Kita bisa menyimpan hasil input ke dalam variabel. Misalkan:
+        </p>
+        <div class="code-block">nama = input("Masukkan nama: ")</div>
+        <p>
+            Ketika user memasukkan string <b>Budi</b>, variabel nama akan berisi <b>Budi</b>.
+        </p>
+        <div class="code-block">
+nama = input("Masukkan nama: ")
+
+print(nama)
+        </div>
+        <p>Ketika dijalankan:</p>
+        <img src="image.png" alt="Contoh output input">
+
+        <h2>Conditional / Percabangan</h2>
+        <p>
+            Digunakan untuk pengambilan keputusan. Ketika kita memiliki beberapa kemungkinan kondisi, dimana setiap kondisi akan menjalankan logika yang berbeda-beda, kita bisa menggunakan Conditional/Percabangan.
+        </p>
+        <div class="note">
+            <b>Syntax:</b>
+            <div class="code-block">
+if kondisi_1:
+    logic_kondisi_1
+            </div>
+        </div>
+        <p>
+            Jika <span class="inline-code">kondisi_1</span> terpenuhi (bernilai True), <span class="inline-code">logic_kondisi_1</span> akan dijalankan (semua kode di bawah if akan dijalankan).
+        </p>
+        <p>Contoh:</p>
+        <div class="code-block">
+n = 87
+
+if n > 80:
+    print("Lulus")
+        </div>
+        <div class="note">
+            Output yang akan muncul adalah <b>Lulus</b>.<br>
+            Kenapa? karena kondisinya benar. n diisi 87. Kondisi yang dicek adalah <i>apakah n lebih besar dari 80?</i> karena benar (87 &gt; 80), maka logic_kondisi nya dijalankan.
+        </div>
+        <p>Contoh:</p>
+        <div class="code-block">
+n = 73
+
+if n > 80:
+    print("Lulus")
+        </div>
+        <div class="note">
+            Output yang akan muncul adalah tidak ada.<br>
+            Kenapa? karena kondisinya salah.
+        </div>
+        <div class="note">
+            <b>PENTING!</b> Semua kode di bawah if yang termasuk <span class="inline-code">logic_kondisi_1</span> harus diberi <b>indentasi</b> atau <b>tab</b>
+        </div>
+
+        <h2>elif dan else</h2>
+        <p>
+            Selain <span class="inline-code">if</span>, kita juga bisa menambahkan kondisi lain menggunakan <span class="inline-code">elif</span> (else if) dan <span class="inline-code">else</span>.<br>
+            <span class="inline-code">elif</span> digunakan jika ada kondisi tambahan yang ingin dicek setelah kondisi pertama.<br>
+            <span class="inline-code">else</span> digunakan untuk menangani semua kemungkinan lain jika semua kondisi sebelumnya tidak terpenuhi.
+        </p>
+        <div class="code-block">
+nilai = int(input("Masukkan nilai: "))
+
+if nilai >= 80:
+    print("Lulus")
+elif nilai >= 60:
+    print("Remedial")
+else:
+    print("Tidak lulus")
+        </div>
+        <ul>
+            <li>Jika nilai yang dimasukkan lebih dari atau sama dengan 80, maka outputnya "Lulus".</li>
+            <li>Jika nilai lebih dari atau sama dengan 60, tapi kurang dari 80, maka outputnya "Remedial".</li>
+            <li>Jika nilai kurang dari 60, maka outputnya "Tidak lulus".</li>
+        </ul>
+        <p>Contoh hasil:</p>
+        <div class="code-block">
+Masukkan nilai: 85
+Lulus
+        </div>
+        <div class="code-block">
+Masukkan nilai: 75
+Remedial
+        </div>
+        <div class="code-block">
+Masukkan nilai: 50
+Tidak lulus
+        </div>
+
+        <h2>Indentasi</h2>
+        <p>
+            Indentasi adalah spasi atau tab yang digunakan untuk menandai blok kode di Python.<br>
+            Python menggunakan indentasi untuk menentukan bagian mana dari kode yang termasuk dalam suatu blok, seperti di dalam <span class="inline-code">if</span>, <span class="inline-code">elif</span>, <span class="inline-code">else</span>, atau fungsi.
+        </p>
+        <p>
+            Jika indentasi salah, program akan error.
+        </p>
+        <p>Contoh yang benar:</p>
+        <div class="code-block">
+nilai = 90
+
+if nilai > 80:
+    print("Lulus")  # kode ini berada di dalam blok if
+    print("Selamat!")  # kode ini juga di dalam blok if
+print("Program selesai")  # kode ini di luar blok if
+        </div>
+        <p>Output:</p>
+        <div class="code-block">
+Lulus
+Selamat!
+Program selesai
+        </div>
+        <p>Contoh yang salah (indentasi tidak konsisten):</p>
+        <div class="code-block">
+nilai = 90
+
+if nilai > 80:
+print("Lulus")  # ERROR! Tidak ada indentasi
+        </div>
+        <p>Output:</p>
+        <div class="code-block">
+IndentationError: expected an indented block
+        </div>
+        <p>Contoh lain:</p>
+        <div class="code-block">
+nilai = 70
+
+if nilai > 80:
+    print("Lulus")
+else:
+    print("Tidak lulus")
+    print("Coba lagi tahun depan")
+print("Program selesai")
+        </div>
+        <div class="note">
+            <ul>
+                <li>Semua kode yang berada di bawah <span class="inline-code">if</span> dan <span class="inline-code">else</span> harus diberi indentasi (biasanya 4 spasi atau 1 tab).</li>
+                <li>Kode yang tidak diberi indentasi dianggap di luar blok.</li>
+            </ul>
+            <b>Tips:</b>
+            <ul>
+                <li>Jangan mencampur tab dan spasi dalam satu file.</li>
+                <li>Biasanya, gunakan 4 spasi untuk setiap level indentasi.</li>
+            </ul>
+        </div>
+
+        <div class="latihan">
+            <h2>Latihan</h2>
+            <ol>
+                <li>
+                    Buat program yang meminta input nama dan umur dari user, lalu cetak:<br>
+                    <span class="inline-code">Halo, [nama]! Umur kamu [umur] tahun.</span>
+                </li>
+                <li>
+                    Buat program yang meminta input nilai, lalu cetak:
+                    <ul>
+                        <li>"Nilai sempurna" jika nilai 100</li>
+                        <li>"Lulus" jika nilai &ge; 80 dan &lt; 100</li>
+                        <li>"Remedial" jika nilai &ge; 60 dan &lt; 80</li>
+                        <li>"Tidak lulus" jika nilai &lt; 60</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Selamat mencoba!</p>
+        </div>
+    </div>
+</body>
+</html>
